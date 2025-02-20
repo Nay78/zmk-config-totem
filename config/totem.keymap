@@ -79,7 +79,7 @@ label= "BASE"                              ;
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
                 &kp A       &mt LGUI R  &mt LSHFT S &mt LCTRL T &mt LALT G      &mt LALT M  &mt LCTRL N &mt LSHFT E &mt LGUI I  &kp O
     &mo 3       &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &lt 5 RET    &lt 5 RET
-                                        &mo 4       &kp SPACE   &lt 1 ESC       &kp LSHFT   &lt 1 BSPC  &mo 2
+                                        &mo 4       &kp SPACE   &lt 1 ESC       &sk LSHFT   &lt 1 BSPC  &mo 2
                         >;
                 };
 
@@ -102,7 +102,7 @@ label= "NAVI"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp K_BACK  &kp END     &kp UP      &kp HOME   &kp TAB          &trans     &kp N7     &kp UP      &kp N9      &kp KP_PLUS
+                &kp K_BACK  &kp HOME    &kp UP      &kp END    &kp TAB          &trans     &kp N7     &kp UP      &kp N9      &kp KP_PLUS
                 &kp PG_UP   &kp LEFT    &kp DOWN    &kp RIGHT  &kp RET          &trans     &kp LEFT   &kp DOWN    &kp RIGHT   &kp KP_MINUS
     &trans      &kp PG_DN   &kp DEL     &none       &none      &kp DEL          &trans     &kp N1     &kp N2      &kp N3      &kp KP_MULTIPLY &trans
                                         &trans      &trans     &trans           &trans     &trans     &trans
