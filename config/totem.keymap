@@ -113,7 +113,7 @@ label= "SYM"                               ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     @     ┃     '     ┃     |     ┃     ?     ┃     ^     ┃   ┃     *     ┃     (     ┃     [     ┃     {     ┃     -     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃     +     ┃     `     ┃     \     ┃     <     ┃     >     ┃   ┃     ~     ┃     )     ┃     ]     ┃     }     ┃     *     ┃           ┃
+// ┃           ┃     +     ┃     `     ┃     \     ┃     <     ┃     >     ┃   ┃     ~     ┃     )     ┃     ]     ┃     }     ┃     _     ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -121,8 +121,8 @@ label= "SYM"                               ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp EXCL    &kp DQT     &kp POUND   &kp DLLR    &kp PRCNT       &kp AMPS    &kp FSLH    &kp COLON   &kp SEMI    &kp EQUAL
-                &kp AT      &kp SQT     &kp PIPE    &kp QMARK   &kp CARET       &kp STAR    &kp LPAR    &kp LBKT   &kp LBRC    &kp MINS 
-    &trans      &kp PLUS    &kp GRAVE   &kp BSLH    &kp LT      &kp GT          &kp TILDE   &kp RPAR    &kp RBKT   &kp RBRC    &kp KP_MULTIPLY &trans
+                &kp AT      &kp SQT     &kp PIPE    &kp QMARK   &kp CARET       &kp STAR    &kp LPAR    &kp LBKT   &kp LBRC    &kp MINUS
+    &trans      &kp PLUS    &kp GRAVE   &kp BSLH    &kp LT      &kp GT          &kp TILDE   &kp RPAR    &kp RBKT   &kp RBRC    &kp UNDER   &trans
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
