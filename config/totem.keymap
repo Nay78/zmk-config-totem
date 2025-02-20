@@ -157,10 +157,10 @@ label= "NUM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &sys_reset  &bt BT_CLR &out OUT_TOG &trans      &trans          &kp PLUS    &kp N7      &kp N8      &kp N9      &kp EQL
-                &bootloader &bt BT_NXT  &trans      &trans      &trans          &kp ASTRK   &kp N4      &kp N5      &kp N6      &kp MINS  
-    &trans      &trans      &bt BT_PRV  &trans      &trans      &kp N0          &kp N0      &kp N1      &kp N2      &kp N3    &trans         &trans
-                                        &trans      &trans      &trans          &trans      &trans      &trans      
+                &trans     &trans      &trans      &trans      &kp PLUS          &kp PLUS    &kp N7      &kp N8      &kp N9      &kp EQL
+                &trans     &trans      &trans      &trans      &kp ASTRK         &kp ASTRK   &kp N4     &kp N5     &kp N6       &kp MINS  
+    &trans      &trans     &trans      &trans      &trans      &kp N0            &kp N0      &kp N1        &kp N2        &kp N3    &trans          &trans
+                                       &trans      &trans      &trans            &trans      &trans      &trans      
                         >;
                 };
 
@@ -183,10 +183,10 @@ label= "NAVI"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-               &kp LC(W)   &kp LC(LALT) &kp LC(LSFT TAB) &kp LC(TAB) &kp TAB   &kp LC(LSFT KP_PLUS) &kp LC(LSFT KP_N7) &kp LC(LSFT KP_N8) &kp LC(LSFT KP_N9) &trans
-               &kp LC(LSFT S) &kp LC(LALT TAB) &kp LC(PG_UP) &kp LC(PG_DN) &kp ESC &kp LC(LSFT ASTRK) &kp LC(LSFT KP_N4) &kp LC(LSFT KP_N5) &kp LC(LSFT KP_N6) &kp LC(LSFT TAB)
-    &kp F11    &kp LSHFT   &kp LSFT(TAB) &kp DEL    &kp LC(V)   &trans         &kp LC(LSFT KP_N0) &kp LC(LSFT KP_N1) &kp LC(LSFT KP_N2) &kp LC(LSFT KP_N3) &trans       &trans
-                                        &trans      &kp LC(Z)   &kp LC(X)      &trans       &trans       &trans    
+               &trans      &kp LC(W)   &kp LC(LS(TAB)) &kp LC(TAB) &kp TAB      &kp LG(KP_PLUS) &kp LC(N7) &kp LC(N8) &kp LC(N9) &trans
+               &kp LG(S)   &kp LA(TAB) &kp LC(PG_UP) &kp LC(PG_DN) &kp ESC      &kp LC(ASTRK)   &kp LC(N4) &kp LC(N5) &kp LC(N6) &kp LC(TAB)
+    &kp F11    &trans      &kp LS(TAB) &kp DEL       &kp LC(V)     &trans       &kp LC(N0)      &kp LC(N1) &kp LC(N2) &kp LC(N3) &trans      &trans
+                                       &trans        &trans        &trans          &trans          &trans     &trans    
                         >;
                 };
 
