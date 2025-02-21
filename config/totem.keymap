@@ -57,7 +57,7 @@
                 bindings = <&kp ESC>;
             };
             combo_config {
-                timeout-ms = <50>;
+                timeout-ms = <90>;
                 key-positions = <20 31>;
                 bindings = <&sl CONF>;
             };
@@ -121,8 +121,8 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
-                &kp A       &mt LGUI R  &mt LSHFT S &mt LCTRL T &mt LALT G      &mt LALT M  &mt LCTRL N &mt LSHFT E &mt LGUI I  &kp O
-    &mo NUM     &lt NUM Z   &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &lt EFE RET    &lt EFE RET
+                &lt NUM A   &mt LGUI R  &mt LSHFT S &mt LCTRL T &mt LALT G      &mt LALT M  &mt LCTRL N &mt LSHFT E &mt LGUI I  &lt EFE O
+    &mo ESC     &lt NUM Z   &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &lt EFE RET    &lt EFE RET
                                         &mo SNAV    &kp SPACE   &lt NAV ESC     &sk LSHFT   &lt NAV BSPC  &mo SYM
                         >;
                 };
@@ -146,9 +146,9 @@ label= "NAVI"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &rpi K_FORWARD K_BACK   &kp HOME &kp UP &kp END &kp TAB         &kp PLUS    &kp LCTRL    &msc SCRL_UP &kp LSHFT &kp KP_PLUS
-                &kp PG_UP   &kp LEFT    &kp DOWN    &kp RIGHT  &kp RET          &kp F2      &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_RIGHT &kp KP_MINUS
-    &trans      &kp PG_DN   &kp DEL     &none       &none      &kp DEL          &trans      &kp N1       &kp N2      &kp N3     &kp KP_MULTIPLY &trans
+                &rpi K_FORWARD K_BACK   &kp HOME &kp UP &kp END &kp TAB         &kp PLUS    &msc SCRL_LEFT &msc UP &msc SCRL_RIGHT &kp KP_PLUS
+                &kp PG_UP   &kp LEFT    &kp DOWN    &kp RIGHT  &kp RET          &mt LALT RET &mt LCTRL LEFT &mt LSHFT DOWN &mt LGUI RIGHT &kp KP_MINUS
+    &trans      &kp PG_DN   &kp DEL     &none       &none      &kp DEL          &msc SCRL_DOWN &kp F2    &msc SCRL_DOWN &kp F4 &kp KP_MULTIPLY &trans
                                         &trans      &trans     &trans           &trans      &trans       &trans
                         >;
                 };
