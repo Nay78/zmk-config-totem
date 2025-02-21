@@ -31,16 +31,12 @@
 
 &mt {
   quick-tap-ms = <150>;
-  //global-quick-tap;
-  //flavor = "tap-preferred";
   flavor = "balanced";
   tapping-term-ms = <170>;
 };
 
 &lt {
   quick-tap-ms = <150>;
-  //global-quick-tap;
-  //flavor = "tap-preferred";
   flavor = "balanced";
   tapping-term-ms = <170>;
 };
@@ -279,8 +275,8 @@ label= "CONF"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &none      &none       &none       &none       &none            &rpi C_PREV C_NEXT &kp C_MUTE &kp C_SLEEP &none &none
-                &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5 &kp C_PP    &kp C_VOL_UP &kp C_BRI_UP &none     &none
-    &none       &kp F9     &kp F10     &kp F11     &kp F12     &kp INS         &kp C_PP    &kp C_VOL_DN &kp C_BRI_DN &none     &none      &trans
+                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp C_PP    &kp C_VOL_UP &kp C_BRI_UP &none    &none
+    &none       &kp F9     &kp F10     &kp F11     &kp F12     &kp INS         &kp C_PP    &kp C_VOL_DN &kp C_BRI_DN &none      &none      &trans
                                        &trans      &trans      &trans          &trans      &trans       &trans
                         >;
                 };
