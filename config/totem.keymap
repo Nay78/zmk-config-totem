@@ -41,6 +41,13 @@
   tapping-term-ms = <170>;
 };
 
+&sk {
+    release-after-ms = <2000>;
+    quick-release;
+    lazy;
+};
+
+
 / {
      combos {
             compatible = "zmk,combos";
@@ -51,7 +58,7 @@
             };
             combo_config {
                 timeout-ms = <50>;
-                key-positions = <20 21>;
+                key-positions = <20 31>;
                 bindings = <&sl CONF>;
             };
     };
