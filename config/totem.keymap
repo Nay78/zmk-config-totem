@@ -26,6 +26,7 @@
 #define NAV  1
 #define SYM  2
 #define ADJ  3
+#define NUM  3
 #define TVP1 4
 #define TVP2 5
 
@@ -93,7 +94,7 @@ label= "BASE"                              ;
 
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
                 &kp A       &mt LGUI R  &mt LSHFT S &mt LCTRL T &mt LALT G      &mt LALT M  &mt LCTRL N &mt LSHFT E &mt LGUI I  &kp O
-    &mo 3       &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &lt 5 RET    &lt 5 RET
+    &mo 3       &lt NUM Z   &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &lt 5 RET    &lt 5 RET
                                         &mo 4       &kp SPACE   &lt 1 ESC       &sk LSHFT   &lt 1 BSPC  &mo 2
                         >;
                 };
@@ -117,10 +118,10 @@ label= "NAVI"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp K_BACK  &kp HOME    &kp UP      &kp END    &kp TAB          &trans     &kp N7     &kp UP      &kp N9      &kp KP_PLUS
-                &kp PG_UP   &kp LEFT    &kp DOWN    &kp RIGHT  &kp RET          &trans     &kp LEFT   &kp DOWN    &kp RIGHT   &kp KP_MINUS
-    &trans      &kp PG_DN   &kp DEL     &none       &none      &kp DEL          &trans     &kp N1     &kp N2      &kp N3      &kp KP_MULTIPLY &trans
-                                        &trans      &trans     &trans           &trans     &trans     &trans
+                &kp K_BACK  &kp HOME    &kp UP      &kp END    &kp TAB          &kp F2     &kp LCTRL    &msc SCRL_UP      &kp LSHFT      &kp KP_PLUS
+                &kp PG_UP   &kp LEFT    &kp DOWN    &kp RIGHT  &kp RET          &trans     &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_RIGHT &kp KP_MINUS
+    &trans      &kp PG_DN   &kp DEL     &none       &none      &kp DEL          &trans     &kp N1       &kp N2      &kp N3      &kp KP_MULTIPLY &trans
+                                        &trans      &trans     &trans           &trans     &trans       &trans
                         >;
                 };
 
