@@ -129,7 +129,7 @@ label= "NAVI"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &rpi K_BACK K_FORWARD &kp HOME    &kp UP      &kp END    &kp TAB          &kp F2     &kp LCTRL    &msc SCRL_UP      &kp LSHFT      &kp KP_PLUS
+                &rpi K_BACK K_FORWARD &kp HOME &kp UP &kp END &kp TAB           &kp F2     &kp LCTRL    &msc SCRL_UP      &kp LSHFT      &kp KP_PLUS
                 &kp PG_UP   &kp LEFT    &kp DOWN    &kp RIGHT  &kp RET          &trans     &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_RIGHT &kp KP_MINUS
     &trans      &kp PG_DN   &kp DEL     &none       &none      &kp DEL          &trans     &kp N1       &kp N2      &kp N3      &kp KP_MULTIPLY &trans
                                         &trans      &trans     &trans           &trans     &trans       &trans
@@ -207,8 +207,8 @@ label= "TVP 1"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-               &trans      &kp LC(W)   &kp LC(LS(TAB)) &kp LC(TAB) &kp TAB      &kp LG(KP_PLUS) &kp LG(N7) &kp LG(N8) &kp LG(N9) &trans
-               &kp LG(S)   &kp LA(TAB) &kp LC(PG_UP) &kp LC(PG_DN) &kp ESC      &kp LG(ASTRK)   &kp LG(N4) &kp LG(N5) &kp LG(N6) &kp LG(TAB)
+               &trans      &kp LC(W)   &kp LC(LS(TAB)) &kp LC(TAB) &kp TAB      &kp LG(KP_MULTIPLY) &kp LG(N7) &kp LG(N8) &kp LG(N9) &trans
+               &kp LG(S)   &kp LA(TAB) &kp LC(PG_UP) &kp LC(PG_DN) &kp ESC      &kp LG(KP_MINUS) &kp LG(N4) &kp LG(N5) &kp LG(N6) &kp LG(TAB)
     &trans     &trans      &kp LS(TAB) &kp DEL       &trans        &kp LC(V)    &kp LG(N0)      &kp LG(N1) &kp LG(N2) &kp LG(N3) &trans      &trans
                                        &trans        &trans        &trans       &trans          &trans     &trans
                         >;
