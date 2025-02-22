@@ -56,13 +56,13 @@
 
 / {
     
-    kscan: kscan {
-        compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "col2row";
-        wakeup-source;
-    };
+    //kscan: kscan {
+    //    compatible = "zmk,kscan-gpio-matrix";
+    //    diode-direction = "col2row";
+    //    wakeup-source;
+    //};
 
-     combos {
+    combos {
         compatible = "zmk,combos";
         combo_config {
             timeout-ms = <50>;
