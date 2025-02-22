@@ -48,7 +48,7 @@
 };
 
 &sl {
-    release-after-ms = <1000>;
+    release-after-ms = <250>;
     //lazy;
 };
 
@@ -75,7 +75,18 @@
             bindings = <&sleep>;
             layers = <CONF>;
         };
-
+        combo_scratchpad {
+            timeout-ms = <10>;
+            key-positions = <11 12>;
+            bindings = <&kp LG(S)>;
+            layers = <BASE>;
+        };
+        combo_save {
+            timeout-ms = <10>;
+            key-positions = <12 13>;
+            bindings = <&kp LC(S)>;
+            layers = <BASE>;
+        };
     };
 
     macros {
@@ -91,7 +102,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp C_SLEEP &soft_off>
+                = <&macro_tap &kp K_SLEEP &soft_off>
                 ;
         };
     };
@@ -125,7 +136,7 @@ label= "BASE"                              ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     0     ┃     W     ┃     F     ┃     P     ┃     G     ┃   ┃     J     ┃     L     ┃     U     ┃     Y     ┃     9     ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃    10     ┃     R     ┃     S     ┃     T     ┃     D     ┃   ┃     H     ┃     N     ┃     E     ┃     I     ┃     19    ┃
+//             ┃    10     ┃     11    ┃     12    ┃     13    ┃     D     ┃   ┃     H     ┃     N     ┃     E     ┃     I     ┃     19    ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃     20    ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     K     ┃     M     ┃     ,     ┃     .     ┃     /     ┃    31     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -160,7 +171,7 @@ label= "NAVI"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &rpi K_FORWARD K_BACK   &kp HOME &kp UP &kp END &kp TAB         &kp PLUS    &msc SCRL_LEFT &msc UP &msc SCRL_RIGHT &kp KP_PLUS
+                &rpi K_FORWARD K_BACK   &kp HOME &kp UP &kp END &kp TAB         &kp PLUS    &msc SCRL_LEFT &kp UP    &msc SCRL_RIGHT &kp KP_PLUS
                 &kp PG_UP   &kp LEFT    &kp DOWN    &kp RIGHT  &kp RET          &mt LALT RET &mt LCTRL LEFT &mt LSHFT DOWN &mt LGUI RIGHT &kp KP_MINUS
     &trans      &kp PG_DN   &kp DEL     &none       &none      &kp DEL          &msc SCRL_DOWN &kp F2    &msc SCRL_DOWN &kp F4 &kp KP_MULTIPLY &trans
                                         &trans      &trans     &trans           &trans      &trans       &trans
