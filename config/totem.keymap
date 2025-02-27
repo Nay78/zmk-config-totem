@@ -28,6 +28,7 @@
 #define SNAV 4
 #define EFE  5
 #define CONF 6
+#define MOUS 7
 
 &mt {
   quick-tap-ms = <150>;
@@ -51,8 +52,6 @@
     release-after-ms = <500>;
     //lazy;
 };
-
-
 
 / {
     
@@ -147,7 +146,7 @@ label= "BASE"                              ;
 
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp RET
                 &lt NUM A   &mt LGUI R  &mt LSHFT S &mt LCTRL T &mt LALT G      &mt LALT M  &mt LCTRL N &mt LSHFT E &mt LGUI I  &lt EFE O
-    &mo ESC     &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp RET    &lt EFE RET
+    &kp TAB     &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp RET    &lt MOUS RET
                                         &sl SNAV    &kp SPACE   &lt NAV ESC     &sk LSHFT   &lt NAV BSPC &sl SYM
                         >;
                 };
@@ -174,7 +173,7 @@ label= "NAVI"                              ;
                 &rpi K_FORWARD K_BACK   &kp HOME &kp UP &kp END &kp TAB         &kp PLUS    &msc SCRL_LEFT &kp UP &msc SCRL_RIGHT &trans
                 &kp PG_UP   &kp LEFT    &kp DOWN    &kp RIGHT  &kp RET          &mt LALT RET &mt LCTRL LEFT &mt LSHFT DOWN &mt LGUI RIGHT &kp KP_MINUS
     &trans      &kp PG_DN   &kp DEL     &kp LC(C)   &kp LC(X)  &kp LC(V)        &msc SCRL_DOWN &kp F2    &msc SCRL_DOWN &kp F4 &kp KP_MULTIPLY &trans
-                                        &trans      &trans     &trans           &trans      &trans       &trans
+                                        &kp LC(S)   &trans     &trans           &trans      &trans       &trans
                         >;
                 };
 
@@ -307,6 +306,34 @@ label= "CONF"                              ;
                                         &trans      &trans      &trans          &trans       &trans      &trans
                         >;
                 };
+
+// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
+
+                mous_layer {
+// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓7
+label= "MOUS"                             ;
+// ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+//             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+//             ┃ SOLO      ┃ TOGGLE IN ┃ RESET ROT ┃ TOGGLE OUT┃ TAKE SNAP ┃   ┃           ┃           ┃           ┃           ┃           ┃
+//             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+//             ┃ ---       ┃ LAST KEY  ┃ NEW KEY   ┃ NEXT KEY  ┃ ENTER     ┃   ┃           ┃           ┃           ┃           ┃           ┃
+// ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+// ┃           ┃ FULLSCR   ┃ CPY2BRUSH ┃ DEL HEAD  ┃ PSTinPLACE┃ BOOK MARK ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+// ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+//                                     ┃           ┃ REDO/SAV1 ┃TRANS/WARP ┃   ┃           ┃           ┃           ┃
+//                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+ bindings = <
+// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+
+                &kp F1     &kp F2      &mmv MOVE_UP &kp F4 &kp PSCRN            &none       &none       &msc SCROLL_UP &none &none
+                &kp F5 &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none      &none &msc SCROLL_LEFT &msc SCROLL_DOWN &msc SCROLL_RIGHT  &none
+    &none       &kp F9     &kp F10     &kp F11      &kp F12     &kp INS         &none       &none       &none        &none     &none       &trans
+                                       &mkp LCLK    &trans      &trans          &trans      &trans      &mkp RCLK
+                        >;
+                };
+
+
 
         };
 };
