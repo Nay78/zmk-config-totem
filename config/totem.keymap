@@ -75,7 +75,7 @@
             layers = <CONF>;
         };
         combo_scratchpad {
-            timeout-ms = <11>;
+            timeout-ms = <12>;
             key-positions = <11 12>;
             bindings = <&kp LG(S)>;
             layers = <BASE>;
@@ -87,7 +87,7 @@
             layers = <BASE>;
         };
         combo_cbackspace {
-            timeout-ms = <11>;
+            timeout-ms = <12>;
             key-positions = <16 36>;
             bindings = <&kp LC(BSPC)>;
             layers = <BASE>;
