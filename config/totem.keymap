@@ -13,7 +13,7 @@
 
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 50    // default: 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 30    // default: 10
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -151,7 +151,7 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
                 &lt NUM Q   &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &lt EFE RET
                 &kp A       &mt LGUI R  &mt LSHFT S &mt LCTRL T &mt LALT G      &mt LALT M  &mt LCTRL N &mt LSHFT E &mt LGUI I  &kp O
-    &kp TAB     &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp LG(S)    &lt MOUS TAB
+    &kp TAB     &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp BSPC    &lt MOUS TAB
                                         &sl SNAV    &kp SPACE   &lt NAV ESC     &sk LSHFT   &lt NAV BSPC &sl SYM
                         >;
                 };
