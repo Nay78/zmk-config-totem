@@ -149,8 +149,8 @@ label= "BASE"                              ;
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-                &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp RET
-                &lt NUM A   &mt LGUI R  &mt LSHFT S &mt LCTRL T &mt LALT G      &mt LALT M  &mt LCTRL N &mt LSHFT E &mt LGUI I  &lt EFE O
+                &lt NUM Q   &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &lt EFE RET
+                &kp A       &mt LGUI R  &mt LSHFT S &mt LCTRL T &mt LALT G      &mt LALT M  &mt LCTRL N &mt LSHFT E &mt LGUI I  &kp O
     &kp TAB     &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp LG(S)    &lt MOUS TAB
                                         &sl SNAV    &kp SPACE   &lt NAV ESC     &sk LSHFT   &lt NAV BSPC &sl SYM
                         >;
@@ -299,9 +299,9 @@ label= "CONF"                              ;
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-                &gif       &none        &none       &none       &soft_off       &soft_off    &none       &none      &none       &kp K_SLEEP
-                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none       &none       &none      &none       &kp C_SLEEP
-    &none       &none      &none        &none       &none       &none           &none        &none       &none      &none       &none      &trans
+                &gif       &none        &none       &none       &soft_off       &soft_off    &to 7       &to 8      &none       &kp K_SLEEP
+                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none       &to 4       &to 5      &to 6       &kp C_SLEEP
+    &none       &none      &none        &none       &none       &none           &none        &to 0       &to 1      &to 3       &none      &trans
                                         &trans      &trans      &trans          &trans       &trans      &trans
                         >;
                 };
@@ -330,6 +330,33 @@ label= "MOUS"                             ;
                                        &mkp LCLK    &trans      &trans          &trans      &trans      &mkp RCLK
                         >;
                 };
+
+
+// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
+                test_layer {
+// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓8
+label= "TEST"                              ;
+// ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+//             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+//             ┃     0     ┃     W     ┃     F     ┃     P     ┃     G     ┃   ┃     J     ┃     L     ┃     U     ┃     Y     ┃     9     ┃
+//             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+//             ┃    10     ┃     11    ┃     12    ┃     13    ┃     14    ┃   ┃     15    ┃     16    ┃     17    ┃     18    ┃     19    ┃
+// ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+// ┃     20    ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     K     ┃     M     ┃     ,     ┃     .     ┃     /     ┃    31     ┃
+// ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+//                                     ┃    32     ┃    33     ┃    34     ┃   ┃     35    ┃     36    ┃     37    ┃
+//                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+ bindings = <
+// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+                &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp RET
+                &lt NUM A   &mt LGUI R  &mt LSHFT S &mt LCTRL T &mt LALT G      &mt LALT M  &mt LCTRL N &mt LSHFT E &mt LGUI I  &lt EFE O
+    &kp TAB     &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp LG(S)   &lt MOUS TAB
+                                        &sl SNAV    &kp SPACE   &lt NAV ESC     &sk LSHFT   &lt NAV BSPC &sl SYM
+                        >;
+                };
+
+
 
         };
 };
