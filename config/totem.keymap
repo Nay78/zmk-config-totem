@@ -175,7 +175,7 @@ label= "NAVI"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
                 &rpi K_FORWARD K_BACK   &kp HOME &kp UP &kp END &kp TAB         &kp PLUS    &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_RIGHT &trans
-                &kp PG_UP   &kp LEFT    &kp DOWN    &kp RIGHT  &kp RET          &kp LALT    &kp LCTRL    &kp LSHFT  &kp LGUI      &kp KP_MINUS
+                &kp PG_UP   &kp LEFT    &kp DOWN    &kp RIGHT  &kp DEL          &kp LALT    &kp LCTRL    &kp LSHFT  &kp LGUI      &kp KP_MINUS
     &trans      &kp PG_DN   &kp DEL     &kp LC(C)   &kp LC(X)  &kp LC(V)        &msc SCRL_DOWN &kp F2    &msc SCRL_DOWN &kp F4   &kp KP_MULTIPLY &trans
                                         &kp LC(S)   &trans     &trans           &trans      &trans       &trans
                         >;
