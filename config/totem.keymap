@@ -75,7 +75,7 @@
             layers = <CONF>;
         };
         combo_scratchpad {
-            timeout-ms = <12>;
+            timeout-ms = <13>;
             key-positions = <11 12>;
             bindings = <&kp LG(S)>;
             layers = <BASE>;
@@ -157,7 +157,6 @@ label= "BASE"                              ;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
 
                 nav_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓1
@@ -250,7 +249,7 @@ label= "SNAV"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
                &trans      &kp LC(W)   &kp LC(LS(TAB)) &kp LC(TAB) &kp TAB      &kp LG(KP_MINUS) &kp LG(N7) &kp LG(N8) &kp LG(N9) &kp LG(S)
-               &kp LC(A)   &kp LA(TAB) &kp LC(PG_UP) &kp LC(PG_DN) &kp ESC      &kp LG(KP_MULTIPLY) &kp LG(N4) &kp LG(N5) &kp LG(N6) &kp LG(TAB)
+               &kp LC(A)   &kp LA(TAB) &kp LC(PG_UP) &kp LC(PG_DN) &kp ESC      &kp LG(KP_MULTIPLY) &kp LG(N4) &mt LSHFT LG(N5) &kp LG(N6) &kp LG(TAB)
     &trans     &trans      &kp DEL &kp LC(LG(LEFT)) &kp LC(LG(RIGHT)) &kp LC(V) &kp LG(N0)      &kp LG(N1) &kp LG(N2) &kp LG(N3) &trans      &trans
                                        &trans        &trans        &trans       &trans          &trans     &trans
                         >;
@@ -299,7 +298,7 @@ label= "CONF"                              ;
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-                &gif       &none        &none       &none       &bt BT_CLR       &soft_off    &to 7       &to 8      &none       &kp K_SLEEP
+                &gif       &none        &out OUT_TOG &none      &bt BT_CLR      &soft_off    &to 7       &to 8      &none       &kp K_SLEEP
                 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none       &to 4       &to 5      &to 6       &kp C_SLEEP
     &none       &none      &none        &none       &none       &none           &none        &to 0       &to 1      &to 3       &none      &trans
                                         &trans      &trans      &trans          &trans       &trans      &trans
@@ -330,7 +329,6 @@ label= "MOUS"                             ;
                                        &mkp LCLK    &trans      &trans          &trans      &trans      &mkp RCLK
                         >;
                 };
-
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
