@@ -13,7 +13,7 @@
 
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 30    // default: 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -174,9 +174,9 @@ label= "NAVI"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
                 &rpi K_FORWARD K_BACK   &kp HOME &kp UP &kp END &kp TAB         &kp PLUS    &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_RIGHT &trans
-                &kp PG_UP   &kp LEFT    &kp DOWN    &kp RIGHT  &kp DEL          &kp LALT    &kp LCTRL    &kp LSHFT  &kp LGUI      &kp KP_MINUS
-    &trans      &kp PG_DN   &kp DEL     &kp LC(C)   &kp LC(X)  &kp LC(V)        &msc SCRL_DOWN &kp F2    &msc SCRL_DOWN &kp F4   &kp KP_MULTIPLY &trans
-                                        &kp LC(S)   &trans     &trans           &trans      &trans       &trans
+                &kp PG_UP   &kp LEFT    &kp DOWN    &kp RIGHT   &kp DEL         &kp LALT    &kp LCTRL   &kp LSHFT  &kp LGUI     &kp KP_MINUS
+    &trans      &kp PG_DN   &kp LC(X)   &kp LC(C)   &kp LC(D)   &kp LC(V)       &kp LC(D)   &kp F2      &msc SCRL_DOWN &kp F4   &kp KP_MULTIPLY &trans
+                                        &kp DEL     &trans      &trans          &trans      &trans      &trans
                         >;
                 };
 
@@ -201,7 +201,7 @@ label= "SYM"                               ;
                 &kp EXCL    &kp DQT     &kp HASH    &kp DOLLAR  &kp PRCNT       &kp AMPS    &kp FSLH    &kp COLON  &kp SEMI    &kp EQUAL
                 &kp AT      &kp SQT     &kp PIPE    &kp QMARK   &kp CARET       &kp ASTRK   &kp LPAR    &kp LBKT   &kp LBRC    &kp MINUS
     &trans      &kp PLUS    &kp GRAVE   &kp BSLH    &kp LT      &kp GT          &kp TILDE   &kp RPAR    &kp RBKT   &kp RBRC    &kp UNDER   &trans
-                                        &trans      &trans      &trans          &trans      &trans      &trans      
+                                        &kp DEL     &trans      &trans          &trans      &trans      &trans
                         >;
                 };
 
@@ -223,10 +223,10 @@ label= "NUM"                               ;
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-                &none       &none       &kp UP      &kp END     &kp TAB          &kp PLUS    &kp N7      &kp N8     &kp N9       &trans
-                &none       &kp LEFT    &kp DOWN    &kp RIGHT   &kp DOT          &kp ASTRK   &kp N4      &kp N5     &kp N6       &kp MINUS
-    &trans      &none       &kp DEL     &kp LC(C)   &kp LC(X)   &kp LC(V)        &kp N0      &kp N1      &kp N2     &kp N3       &trans          &trans
-                                        &trans      &trans      &trans           &trans      &trans      &trans
+                &none       &kp HOME    &kp UP      &kp END     &kp TAB         &kp PLUS    &kp N7      &kp N8     &kp N9       &trans
+                &none       &kp LEFT    &kp DOWN    &kp RIGHT   &kp DOT         &kp ASTRK   &kp N4      &kp N5     &kp N6       &kp MINUS
+    &trans      &none       &kp LC(X)   &kp LC(C)   &kp LC(D)   &kp LC(V)       &kp N0      &kp N1      &kp N2     &kp N3       &trans          &trans
+                                        &kp DEL     &trans      &trans          &trans      &trans      &kp COMMA
                         >;
                 };
 
@@ -248,10 +248,10 @@ label= "SNAV"                             ;
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-               &trans      &kp LC(W)   &kp LC(LS(TAB)) &kp LC(TAB) &kp TAB      &kp LG(KP_MINUS) &kp LG(N7) &kp LG(N8) &kp LG(N9) &kp LG(S)
+               &rpi K_FORWARD K_BACK &kp LC(W) &kp LC(LS(TAB)) &kp LC(TAB) &kp TAB &kp LG(KP_MINUS) &kp LG(N7) &kp LG(N8) &kp LG(N9) &kp LG(S)
                &kp LC(A)   &kp LA(TAB) &kp LC(PG_UP) &kp LC(PG_DN) &kp ESC      &kp LG(KP_MULTIPLY) &kp LG(N4) &mt LSHFT LG(N5) &kp LG(N6) &kp LG(TAB)
-    &trans     &trans      &kp DEL &kp LC(LG(LEFT)) &kp LC(LG(RIGHT)) &kp LC(V) &kp LG(N0)      &kp LG(N1) &kp LG(N2) &kp LG(N3) &trans      &trans
-                                       &trans        &trans        &trans       &trans          &trans     &trans
+    &trans     &kp LC(S)   &kp DEL &kp LC(LG(LEFT)) &kp LC(LG(RIGHT)) &kp LC(V) &kp LG(N0)      &kp LG(N1) &kp LG(N2) &kp LG(N3) &trans      &trans
+                                       &trans        &trans        &trans       &trans          &trans     &kp LC(S)
                         >;
                 };
 
