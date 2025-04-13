@@ -127,7 +127,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LC(A) &kp s &sl NUM>
+                = <&macro_tap &kp LC(A) &kp S &sl NUM>
                 ;
         };
     };
@@ -138,12 +138,6 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp N1>, <&kp N2>, <&kp N3>;
-        };
-        td1: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp N1>, <&kp N2>;
         };
         rpi: require_prior_idle {
             compatible = "zmk,behavior-hold-tap";
@@ -276,7 +270,7 @@ label= "SNAV"                             ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
      &rpi K_FORWARD K_BACK &kp LC(W)   &kp LC(LS(TAB)) &kp LC(TAB) &kp TAB      &kp LG(KP_MINUS) &kp LG(N7) &kp LG(N8) &kp LG(N9) &kp LG(S)
                &kp LC(A)   &kp LA(TAB) &kp LC(PG_UP) &kp LC(PG_DN) &kp ESC      &kp LG(KP_MULTIPLY) &kp LG(N4) &mt LSHFT LG(N5) &kp LG(N6) &kp LG(TAB)
-    &trans     &tmux1      &tmux1      &kp LC(LG(LEFT)) &kp LC(LG(RIGHT)) &kp LC(V) &kp LG(N0)  &kp LG(N1) &kp LG(N2) &kp LG(N3)               &trans      &trans
+    &trans     &tmux1      &tmux1      &kp LC(LG(LEFT)) &kp LC(LG(RIGHT))       &kp LC(V) &kp LG(N0)  &kp LG(N1) &kp LG(N2) &kp LG(N3) &trans      &trans
                                        &trans       &trans      &trans          &trans    &trans     &trans
                         >;
                 };
