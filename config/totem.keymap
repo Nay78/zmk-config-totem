@@ -171,7 +171,7 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
                 &lt NUM Q   &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &lt EFE RET
                 &kp A       &mt LGUI R  &mt LSHFT S &mt LCTRL T &mt LALT G      &mt LALT M  &mt LCTRL N &mt LSHFT E &mt LGUI I  &kp O
-    &sl NUM     &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp BSPC    &lt MOUS TAB
+    &sl NUM     &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &lt NAV BSPC    &lt MOUS TAB
                                         &sl SNAV    &kp SPACE   &lt NAV ESC     &sk LSHFT   &lt NAV BSPC &sl SYM
                         >;
                 };
