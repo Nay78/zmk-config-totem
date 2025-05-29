@@ -244,8 +244,8 @@ label= "NUM"                               ;
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-                &none       &kp HOME    &kp UP      &kp END     &kp TAB         &kp PLUS    &kp N7      &kp N8     &kp N9       &trans
-                &none       &kp LEFT    &kp DOWN    &kp RIGHT   &kp DOT         &kp ASTRK   &kp N4      &kp N5     &kp N6       &kp MINUS
+                &none       &msc SCRL_LEFT &kp COMMA &msc SCRL_RIGHT &kp TAB         &kp PLUS    &kp N7      &kp N8     &kp N9       &trans
+                &none       &kp LEFT    &kp DOWN    &kp COMMA   &kp KP_DOT      &kp ASTRK   &kp N4      &kp N5     &kp N6       &kp MINUS
     &trans      &none       &kp LC(X)   &kp LC(C)   &kp LC(D)   &kp LC(V)       &kp N0      &kp N1      &kp N2     &kp N3       &trans          &trans
                                         &kp DEL     &trans      &trans          &trans      &trans      &kp COMMA
                         >;
