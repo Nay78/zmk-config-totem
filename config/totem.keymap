@@ -368,9 +368,9 @@ label= "TEST"                              ;
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-                &kp Q       &kp HOME   &msc SCRL_UP        &kp END       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp RET
-                &lt NUM A   &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_RIGHT &mt LALT G      &mt LALT M  &mt LCTRL N &mt LSHFT E &mt LGUI I  &lt EFE O
-    &kp TAB     &kp Z       &kp X      &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp LG(S)   &lt MOUS TAB
+                &kp LG(N1)  &kp LG(N2) &kp LG(N3) &kp LG(N4)  &kp LG(LS(LEFT)) &kp J       &kp L       &kp U       &kp Y       &kp RET
+                &kp LG(N5)  &kp LG(N6) &kp LG(N7) &kp LG(N8)  &kp LG(LS(RIGHT)) &mt LALT M  &mt LCTRL N &mt LSHFT E &mt LGUI I  &lt EFE O
+    &kp TAB     &kp LG(N9)  &kp LG(N0) &kp LG(LS(LEFT)) &kp LG(LS(RIGHT)) &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp LG(S)   &lt MOUS TAB
                                        &trans      &trans      &trans          &trans       &trans      &trans
                         >;
                 };
